@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kolega Registration</title>
+<style>
+body, html {height: 100%;margin: 0;font-family: Arial, sans-serif;display: flex;justify-content: center;align-items: center; background: linear-gradient(135deg, #6e8efb, #a777e3);}
+.container {background: rgba(255, 255, 255, 0.3);padding: 20px;border-radius: 10px;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);backdrop-filter: blur(10px);text-align: center;}
+h1 {font-size: 2em;color: #fff;}
+input[type="text"], input[type="email"], input[type="password"] {width: 100%;padding: 10px;margin: 10px 0;border: none;border-radius: 5px;}
+input[type="submit"] {background-color: #4CAF50;color: white;padding: 10px 20px;border: none;border-radius: 5px;cursor: pointer;}
+input[type="submit"]:hover {background-color: #45a049;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Register with Kolega</h1>
+<form action="/submit_registration" method="post">
+<input type="text" name="username" placeholder="Username" required><br>
+<input type="email" name="email" placeholder="Email" required><br>
+<input type="password" name="password" placeholder="Password" required><br>
+<input type="submit" value="Register">
+</form>
+</div>
+</body>
+</html>
